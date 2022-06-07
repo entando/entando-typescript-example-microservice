@@ -1,0 +1,17 @@
+{
+  "name": "entando-typescript-example-microservice-bundle",
+  "decription": "Entando Typescript Example Microservice Bundle",
+  "version": "0.0.1",
+  "microservices": [
+    {
+      "name": "helloworld-example-service",
+      "stack": "node",
+      "image": "<organization>/<component_name>:<component_version>",
+      "dbms": "none",
+      "ingressPath": "/ts-example-ms",
+      "healthCheckPath": "/api/health",
+      "roles": [],
+      "env": {}
+    }
+  ]
+}

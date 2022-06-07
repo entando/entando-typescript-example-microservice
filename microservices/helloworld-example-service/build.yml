@@ -1,0 +1,13 @@
+options:
+  concurrency: 0 # Use all CPUs
+
+packages:
+  api:
+    cwd: build
+    output: ../dist/helloworld-example-service.zip
+    trace:
+      - src/index.js
+      - src/api
+    include:
+      - src/api
+      - ../package.json
